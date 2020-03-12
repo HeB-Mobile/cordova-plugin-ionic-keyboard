@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:rim="http://www.blackberry.com/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-ionic-keyboard" version="2.2.0">
-    <name>cordova-plugin-ionic-keyboard</name>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:rim="http://www.blackberry.com/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-ebw-ionic-keyboard" version="2.2.0">
+    <name>cordova-plugin-ebw-ionic-keyboard</name>
     <description>Ionic Keyboard Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,keyboard,ecosystem:cordova,cordova-ios,cordova-android</keywords>
@@ -12,23 +12,6 @@
     <engines>
 	    <engine name="cordova" version=">=3.2.0"/>
     </engines>
-
-    <!-- ios -->
-    <platform name="ios">
-
-        <js-module src="www/ios/keyboard.js" name="keyboard">
-    	    <clobbers target="window.Keyboard"/>
-        </js-module>
-
-        <config-file target="config.xml" parent="/*">
-            <feature name="CDVIonicKeyboard">
-                <param name="ios-package" value="CDVIonicKeyboard" onload="true"/>
-            </feature>
-        </config-file>
-
-        <header-file src="src/ios/CDVIonicKeyboard.h"/>
-        <source-file src="src/ios/CDVIonicKeyboard.m"/>
-    </platform>
 
     <!-- android -->
     <platform name="android">
